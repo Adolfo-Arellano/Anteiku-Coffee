@@ -1,0 +1,306 @@
+/* Hoja de estilo del navegador y pie de pagina de todas las paginas web */
+
+/* Paleta de colores */
+:root {
+    --color-metallic-gold: #DBB94D;
+    --color-coffe: #704E2E;
+    --color-chestnut: #A15535;
+    --color-roman-silver: #8491A3;
+    --color-goldenrod: #DEAE07;
+    --color-blanco: #FFFFFF;
+    font-size: 16px;
+}
+
+
+
+/* NAV */
+nav {
+    background-color: var(--color-coffe);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 0.9vw 0 1.5vw;
+    max-width: 82vw;
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+/* Estilo de logo */
+.nav-left {
+    padding-top: 5px;
+}
+
+.logo {
+    min-width: 125px;
+    width: 15vw;
+    transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(0.9);
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+/* Estilos del navegador junto con los iconos */
+.nav-right {
+    float: right;
+    width: 45%;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.5em;
+}
+
+li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+a:hover {
+    color: var(--color-goldenrod);
+}
+
+.icon-size {
+    width: 1.8vw;
+    min-width: 24px;
+    margin-top: 0.18em;
+}
+
+.icon-transition {
+    transition: all 0.3s;
+}
+
+.icon-transition:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px #000);
+    transition: all 0.3s ease 0s;
+}
+
+.checkbtn {
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+/* NAV */
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--color-coffe);
+    color: var(--color-blanco);
+    min-height: 50px;
+    height: 10vh;
+    max-width: 82vw;
+    width: 100%;
+    margin-top: 2em;
+}
+
+footer div {
+    align-self: center;
+}
+
+/* Estilo de logo de pie de pagina */
+.logo-footer {
+    min-width: 100px;
+    width: 12vw;
+    margin-left: 2em;
+    transition: all 0.3s;
+}
+
+.logo-footer:hover{
+    transform: scale(0.9);
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
+/* Estilo de icono de telefono */
+.phone-designed {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    width: 28vw;
+}
+
+.phone {
+    align-self: center;
+    font-size: 1.4em;
+}
+
+.phone img {
+    width: 1.3vw;
+    min-width: 20px;
+}
+
+/* Estilo de iconos de redes sociales */
+.icon-contact {
+    align-self: center;
+    margin-right: 2.2em;
+}
+
+.icon-contact div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 1vh;
+}
+
+.icon-size-footer {
+    width: 1.8vw;
+    min-width: 20px;
+}
+/* FOOTER */
+
+
+
+/* RESPONSIVE */
+@media (max-width: 1200px){
+    nav {
+        font-size: 1.25em;
+    }
+    .nav-right ul {
+        gap: 1.8em;
+        }
+    footer {
+        height: 75px;
+    }
+    .phone-designed {
+        gap: 0;
+    }
+    .phone {
+        font-size: 1.1em;
+    }
+    .icon-contact {
+        font-size: 1em;
+        margin-right: 1.2em;
+    }
+    .logo-footer {
+        margin-left: 1em;
+        width: 175px;
+    }
+    .icon-size-footer {
+        width: 26px;
+    }
+}
+
+@media (max-width: 992px){
+    nav {
+        font-size: 1.1em;
+    }
+    .nav-right ul {
+    gap: 1em;
+    }
+    footer {
+        height: 75px;
+    }
+    .logo-footer {
+        margin-left: 0.5em;
+        width: 150px;
+    }
+    .phone-designed {
+        width: 30vw;
+        font-size: 0.9em;
+    }
+    .icon-contact {
+        font-size: 0.85em;
+        margin-right: 0.9em;
+    }
+    .icon-size-footer {
+        width: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    nav {
+        width: 100%;
+        max-width: 100vw;
+        font-size: 1.1em;
+    }
+    .nav-right ul {
+    gap: 1.5em;
+    }
+    footer {
+        width: 100%;
+        max-width: 100vw;
+    }
+    .logo-footer {
+        margin-left: 0.15em;
+        width: 130px;
+    }
+    .phone-designed {
+        width: 36vw;
+        font-size: 0.8em;
+    }
+    .icon-contact {
+        font-size: 0.8em;
+        margin-right: 0.5em;
+    }
+}
+
+@media (max-width: 576px){
+    .checkbtn{
+        display: block;
+    }
+    nav {
+        font-size: 1.2em;
+    }
+    .nav-right {
+        position: relative
+    }
+    .nav-right ul{
+        background: var(--color-coffe);
+        flex-direction: column;
+        align-self: center;
+        gap: 0.3em;
+        position: absolute;
+        top: 38px;
+        right: -25px;
+        width: 175px;
+        height: 190px;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 5px;
+    }
+    #check:checked ~ ul{
+        display: none;
+    }
+    footer {
+        position: relative;
+        flex-direction: column;
+        height: 125px;
+    }
+    .logo-footer {
+        margin-top: 10px;
+        width: 150px;
+    }
+    .phone-designed {
+        position: absolute;
+        width: 52%;
+        top: 50px;
+        left: 0;
+    }
+    .icon-contact {
+        position: absolute;
+        width: 48%;
+        top: 50px;
+        right: 0px;
+    }
+}
+/* RESPONSIVE */

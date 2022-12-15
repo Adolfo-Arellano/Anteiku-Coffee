@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | Anteiku Coffee</title>
+    <link rel="stylesheet" href="../css/registrarse.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="shortcut icon" href="../favicon/cafe-title-ico-2.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <!-- Logo de retorno a pagina de inicio -->
+            <div class="nav-left">
+                <a href="index.html"><img src="../img/anteiku-nav" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <!-- Menu responsive -->
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../img/menu-bar.png" alt="" class="icon-size">
+                    </label>
+                <ul>
+                    <!-- Links a diferentes paginas web -->
+                    <li class="icon-transition"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="icon-transition"><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="icon-transition"><a href="beneficios.html" >BENEFICIOS</a></li>
+                    <li><a href="registrarse.html"><img src="../img/icon-login2.png" alt="icon-login" class="icon-size icon-transition"></a></li>
+                    <li><a href="#"><img src="../img/icon-shopping-cart.png" alt="icon-cart" class="icon-size icon-transition"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- NAV -->
+
+    <!-- FORM -->
+    <section class="container">
+        <!-- Formulario de inicio de sesion -->
+        <div class="login">
+            <h2>Iniciar Sesión</h2>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1307667977%3A1671139263698140&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession">
+                    <button class="google-btn">
+                        <picture>
+                            <img src="https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png" alt="logo-google" />
+                        </picture>
+                        <span>Ingresar con Google</span>
+                    </button>
+                </a>
+            <div class="separator">
+                <hr>
+                <span>O</span>
+                <hr>
+            </div>
+            <form action="" method="">
+                <label for="email">
+                    <span>Correo electrónico</span>
+                    <input id="email" name="email" placeholder="ejemplo@gmail.com"/>
+                </label>
+                <label for="password">
+                    <span>Contraseña</span>
+                    <input type="password" id="password" name="password" placeholder="••••••••••"/>
+                    <a href="#" class="forget-pass">Olvidé mi contraseña</a>
+                </label>
+                <button type="submit" class="submit-btn">Ingresar</button>
+            </form>
+        </div>
+        <!-- Formulario de registro con validación -->
+        <div class="register">
+            <h2>Registrarse</h2>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1307667977%3A1671139263698140&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=es-419&flowName=GlifWebSignIn&flowEntry=AddSession">
+                    <button class="google-btn">
+                        <picture>
+                            <img src="https://entredichos.trabajosocial.unlp.edu.ar/wp-content/uploads/sites/6/2016/12/Google_-G-_Logo.svg_.png" alt="logo-google" />
+                        </picture>
+                        <span>Registrarse con Google</span>
+                    </button>
+                </a>
+            <div class="separator">
+                <hr>
+                <span>O</span>
+                <hr>
+            </div>
+            <form action="" method="">
+                <label for="name">
+                    <span>Nombre</span>
+                    <input id="name" name="name" />
+                </label>
+                <label for="surname">
+                    <span>Apellido</span>
+                    <input id="surname" name="surname" />
+                </label>
+                <label for="birthday">
+                    <span>Fecha de nacimiento</span>
+                    <input id="birthday" name="birthday" placeholder="dd/mm/aa"/>
+                </label>
+                <label for="email2">
+                    <span>Correo electrónico</span>
+                    <input id="email2" name="email2" placeholder="ejemplo@gmail.com"/>
+                </label>
+                <label for="password2">
+                    <span>Contraseña</span>
+                    <input type="password" id="password2" name="password2" placeholder="••••••••••" />
+                </label>
+                <label for="repeat-password2">
+                    <span>Repetir contraseña</span>
+                    <input type="password" id="repeat-password2" name="repeat-password2" placeholder="••••••••••" />
+                </label>
+                <label for="checkbox" class="checkbox-label">
+                    <input type="checkbox" id="checkbox">
+                    <span>Crear una cuenta significa que está de acuerdo con nuestros Términos de servicio y política de privacidad</span>
+                </label>
+                <input type="submit" class="submit-btn" onclick="return enviarRegistro();" value="Registrarse" />
+            </form>
+            <div id="error"></div>
+        </div>
+    </section>
+    <!-- FORM -->
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Logo de pie pagina -->
+        <div>
+            <ul>
+                <li><a href="index.html"><img src="../img/anteiku-footer" alt="logo" class="logo-footer"></a></li>
+            </ul>
+        </div>
+        <!-- Icono de telefono -->
+        <div class="phone-designed">
+            <div class="phone">
+                <img src="../img/icon-phone.png" alt="telefono">
+                <span>1234-5678</span>
+            </div>
+            <p>Diseñado y desarrollado por Adolfo - Jose - Adrian © 2022 Anteiku Coffee.</p>
+        </div>
+        <div class="icon-contact">
+            <h3>CONECTATE CON NOSOTROS</h3>
+            <div>
+                <!-- Links a redes -->
+                <a href="https://www.instagram.com" ><img src="../img/icon-instagram.png" alt="icon-instagram" class="icon-size-footer icon-transition"></a>
+                <a href="https://twitter.com"><img src="../img/icon-twitter.png" alt="icon-twitter" class="icon-size-footer icon-transition"></a>
+                <a href="https://www.spotify.com"><img src="../img/icon-spotify.png" alt="icon-spotify" class="icon-size-footer icon-transition"></a>
+                <a href="https://web.whatsapp.com"><img src="../img/icon-whatsapp.png" alt="icon-whatsapp" class="icon-size-footer icon-transition"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    
+    <script src="/js/registrarse.js"></script>
+</body>
+</html>

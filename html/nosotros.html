@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Anteiku Coffee</title>
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/nosotros.css">
+</head>
+<body onload="initialize_map(); add_map_point(-34.612139880453746, -58.43714740183123);">
+    <!-- Nav -->
+    <header>
+        <nav>
+            <!-- Logotipo de vuelta a pagina de inicio -->
+            <div class="nav-left">
+                <a href="index.html"><img src="../img/anteiku-nav" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <!-- Menu responsive -->
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../img/menu-bar.png" alt="" class="icon-size">
+                    </label>
+                <ul>
+                    <!-- Links a diferentes paginas web -->
+                    <li class="icon-transition"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="icon-transition"><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="icon-transition"><a href="beneficios.html" >BENEFICIOS</a></li>
+                    <li><a href="registrarse.html"><img src="../img/icon-login2.png" alt="icon-login" class="icon-size icon-transition"></a></li>
+                    <li><a href="#"><img src="../img/icon-shopping-cart.png" alt="icon-cart" class="icon-size icon-transition"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav -->
+
+    <!-- Cuerpo de pagina -->
+    <section class="container">
+        <h1>¿Quiénes Somos?</h1>
+        <p>Somos una empresa dedicada a la satisfacción de nuestros clientes con  una amplia carta de postres y bebidas a base de café, en un lugar donde se puede respirar tranquilidad tanto para nuestros clientes como para nuestro equipo de trabajo, siempre comprometidos con  la calidad de nuestros productos y servicio sin dejar de lado el cuidado del medio ambiente, el cuidado de nuestra gente  y de nuestra localidad.</p>
+        
+        <h2>Misión y Visión</h2>
+        <p>Brindar a nuestros clientes productos y servicios con los más altos estándares de calidad y eficacia, para su degustación y satisfacción total.</p>
+        <p>Posicionarnos como una de las mejores cafeterías a nivel regional, reconocida por sus productos/servicio y por la originalidad de los mismos.</p>
+        
+        <!-- MAPA -->
+        <h2 id="h2-map">Visitanos en Dr. Juan Felipe Aranguren 435</h2>
+        <div id="map" class="map"></div>
+        <!-- MAPA -->
+
+        <h3>Horarios</h3>
+        <p>Lunes a Sabado de 08:00 - 20:00 hrs</p>
+        <!-- Iframe Spotify -->
+        <h2 id="h2-spotify">Escucha nuestra playlist</h2>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7K6fVGUcL6ChCsRMJP4oOC?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!-- Iframe Spotify -->
+    </section>
+    <!-- Cuerpo de pagina -->
+    
+    <!-- FOOTER -->
+    <footer>
+        <!-- Logo de pie pagina -->
+        <div>
+            <ul>
+                <li><a href="index.html"><img src="../img/anteiku-footer" alt="logo" class="logo-footer"></a></li>
+            </ul>
+        </div>
+        <!-- Icono de telefono -->
+        <div class="phone-designed">
+            <div class="phone">
+                <img src="../img/icon-phone.png" alt="telefono">
+                <span>1234-5678</span>
+            </div>
+            <p>Diseñado y desarrollado por Adolfo - Jose - Adrian © 2022 Anteiku Coffee.</p>
+        </div>
+        <div class="icon-contact">
+            <h3>CONECTATE CON NOSOTROS</h3>
+            <div>
+                <!-- Links a redes -->
+                <a href="https://www.instagram.com" ><img src="../img/icon-instagram.png" alt="icon-instagram" class="icon-size-footer icon-transition"></a>
+                <a href="https://twitter.com"><img src="../img/icon-twitter.png" alt="icon-twitter" class="icon-size-footer icon-transition"></a>
+                <a href="https://www.spotify.com"><img src="../img/icon-spotify.png" alt="icon-spotify" class="icon-size-footer icon-transition"></a>
+                <a href="https://web.whatsapp.com"><img src="../img/icon-whatsapp.png" alt="icon-whatsapp" class="icon-size-footer icon-transition"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.15.1/build/ol.js"></script>
+    <script src="/js/nosotros.js"></script>
+</body>
+</html>

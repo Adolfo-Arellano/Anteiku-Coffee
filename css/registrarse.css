@@ -1,0 +1,241 @@
+/* Se importa fuente */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Paleta de colores */
+:root {
+    --color-metallic-gold: #DBB94D;
+    --color-coffe: #704E2E;
+    --color-chestnut: #A15535;
+    --color-roman-silver: #8491A3;
+    --color-goldenrod: #DEAE07;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-grayish: #F3F3F4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    margin: 0 9vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url(../img/background-coffee.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: var(--color-metallic-gold);
+    color: var(--color-chestnut);
+    max-width: 82vw;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cuerpo de pagina */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Estilos de formularios */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 3em;
+    width: 330px;
+}
+
+.register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3em;
+    width: 400px;
+}
+
+.forget-pass {
+    color: var(--color-chestnut);
+    font-weight: 700;
+    text-align: right;
+}
+
+.google-btn {
+    background-color: #1A73E8;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.google-btn:hover {
+    opacity: 0.75;
+}
+
+.google-btn picture {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color-white);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img {
+    width: 75%;
+}
+
+.google-btn span {
+    color: var(--color-white);
+    font-weight: 500;
+    padding: 15px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid var(--color-black);
+}
+
+.separator span {
+    color: var(--color-black);
+}
+
+.section-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+.section-inputs label input {
+    width: 100%;
+    background-color: var(--color-grayish);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+}
+
+label input {
+    width: 100%;
+    background-color: var(--color-grayish);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover {
+    background-color: var(--color-white);
+    border: solid 1px var(--color-grayish);
+    box-shadow: 0 0 4px #EB50FF4F;
+}
+label input:focus {
+    background-color: var(--color-grayish);
+    border: solid 1px var(--color-grayish);
+    box-shadow: 0 0 4px #EB50FF4F;
+}
+
+/* Estilo botón "checkbox" */
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox-label input[type="checkbox"] {
+    align-self: center;
+    width: 20px;
+    height: 14.5px;
+}
+
+.checkbox-label span {
+    font-weight: 500;
+}
+
+/* Estilo botón "submit" */
+.submit-btn {
+    background-color: var(--color-coffe);
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 0.75;
+}
+
+/* Responsive (formularios) */
+@media (max-width: 992px){
+    .container { 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .login {
+        margin-top: 3em;
+    }
+    .register {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 768px){
+    html {
+        margin: 0;
+    }
+    body {
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 400px){
+    .register, .login {
+        width: 300px;
+    }
+}

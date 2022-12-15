@@ -1,0 +1,254 @@
+/* importe de fuente */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Paleta de colores */
+:root {
+    --color-metallic-gold: #DBB94D;
+    --color-coffe: #704E2E;
+    --color-chestnut: #a15535;
+    --color-roman-silver: #8491A3;
+    --color-goldenrod: #DEAE07;
+    --color-blanco: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    margin: 0 9vw;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url(../img/background-coffee.png);
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: var(--color-metallic-gold);
+    color: var(--color-chestnut);
+    max-width: 82vw;
+    width: 100%;
+    height: 100%;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    font-size: 2rem;
+}
+
+.points img {
+    width: 100%;
+    min-width: 81.2vw;
+}
+
+.section1 {
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+
+/* Producto Limitado */
+.limited-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-blanco);
+    margin-top: 2vw;
+    background-color: #a15535bf;
+}
+
+.limited-product div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5vh;
+    width: 40.6vw;
+    font-size: 1.15em;
+}
+
+.limited-product div img {
+    width: 12vw;
+}
+
+.frame-left {
+    align-self: flex-end;
+    margin-right: 4vw;
+}
+
+.frame-right {
+    align-self: flex-start;
+    margin-left: 4vw;
+}
+
+.limited-product img {
+    width: 40.6vw;
+    max-width: 41vw;
+}
+/* Producto Limitado */
+
+
+
+/* Carousel */
+.featured-products {
+    display: flex;
+    align-items: center;
+    max-width: 82vw;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.carrousel{
+    width: 100%;
+}
+.carrousel h2{
+    font-size: 1.8em;
+    line-height: 38px;
+    opacity: .9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+/* imagenes */
+.sliding-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 82vw;
+    width: 100%;
+    overflow: hidden;
+    background-color: #AF6D3A;
+}
+
+.sliding-base{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.sliding-img{
+    position: relative;
+    width: 407px;
+    padding: 0 32px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+}
+
+.sliding-img h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+}
+
+.sliding-img h4 small{
+    font-size: 15px;
+    display: block;
+}
+
+.sliding-img a img{
+    object-fit: cover;
+    width: 275px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+}
+
+.sliding-img a img:hover{
+    opacity: .85;
+}
+
+#carrousel-img-end {
+    width: 275px;
+}
+
+/* Botones */
+.sliding-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+}
+.sliding-arrow:focus{
+    outline: 0;
+}
+
+.sliding-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+
+.sliding-prev{
+    left: 0px;
+}
+
+.sliding-next{
+    right: 0px;
+}
+/* Carousel */
+
+
+
+/* Imagenes de fin de pagina */
+.know-us {
+    display: flex;
+    justify-content: space-evenly ;
+    width: 100%;
+    max-width: 82vw;
+    margin-top: 3em;
+}
+
+.know-us img {
+    width: 25vw;
+    max-width: 41vw;
+    max-height: 360px;
+}
+
+.know-us div {
+    position: relative;
+    justify-content: center;
+}
+
+.know-us div button {
+    position: absolute;
+
+}
+/* Imagenes de fin de pagina */
+
+@media (max-width: 768px){
+    html {
+        margin: 0;
+    }
+    body, .points img, .slick-list, .know-us {
+        width: 100vw;
+        max-width: 100vw;
+    }
+}

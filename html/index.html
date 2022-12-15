@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../favicon/cafe-title-ico-2.ico" type="image/x-icon">
+    <title>Inicio | Anteiku Coffee</title>
+</head>
+<body>
+    <!-- Nav -->
+    <header>
+        <nav>
+            <!-- Logotipo de vuelta a pagina de inicio -->
+            <div class="nav-left">
+                <a href="index.html"><img src="../img/anteiku-nav" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <!-- Menu responsive -->
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../img/menu-bar.png" alt="" class="icon-size">
+                    </label>
+                <ul>
+                    <!-- Links a diferentes paginas web -->
+                    <li class="icon-transition"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="icon-transition"><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="icon-transition"><a href="beneficios.html" >BENEFICIOS</a></li>
+                    <li><a href="registrarse.html"><img src="../img/icon-login2.png" alt="icon-login" class="icon-size icon-transition"></a></li>
+                    <li><a href="#"><img src="../img/icon-shopping-cart.png" alt="icon-cart" class="icon-size icon-transition"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Nav -->
+
+    <!-- Banner redireccionado a la pagina de beneficios-->
+    <section class="points">
+        <a href="beneficios.html"><img src="../img/banner-puntos.png" alt=""></a>
+    </section>
+    <!-- Banner redireccionado a la pagina de beneficios-->
+
+    <!-- Marcos de cafe de edicion limitada -->
+    <section class="limited-product">
+        <div>
+            <img src="../img/marco-1.png" alt="marco" class="frame-left">
+            <h1>EDICIÓN LIMITADA</h1>
+            <p>Una explosión de sabor en tu boca!</p>
+            <h2>NUEVO CAFÉ DE ORIGEN ÚNICO</h2>
+            <img src="../img/marco-2.png" alt="marco" class="frame-right">
+        </div>
+        <img src="../img/producto-limitado2.png" alt="bolsa de cafe">
+    </section>
+    <!-- Marcos de cafe de edicion limitada -->
+
+    <!-- Carrousel de imagenes -->
+    <section class="featured-products">
+        <div class="carrousel">
+            <h2>Productos Destacados</h2>
+            <div class="sliding-list" id="slick-list">
+                <!-- Boton de retroceso carrousel -->
+                <button class="sliding-arrow sliding-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                </button>
+                <!-- Cartas de imagenes con el nombre del producto -->
+                <div class="sliding-base" id="base">
+                    <div class="sliding-img" id="carousel-img-start">
+                        <a href="#">
+                            <h4><small>Café Irlandés</small></h4>
+                            <picture>
+                                <img src="../img/irish-coffee.png" alt="irish-coffee">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sliding-img">
+                        <a href="#">
+                            <h4><small>Cheesecake de Oreo</small></h4>
+                            <picture>
+                                <img src="../img/cheesecake-oreo.png" alt="cheesecake-oreo">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sliding-img">
+                        <a href="#">
+                            <h4><small>Café Helado</small></h4>
+                            <picture>
+                                <img src="../img/iced-coffee.png" alt="iced-coffee">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sliding-img">
+                        <a href="#">
+                            <h4><small>Tiramisú de Matcha</small></h4>
+                            <picture>
+                                <img src="../img/tiramisu-matcha.png" alt="tiramisu-matcha">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sliding-img">
+                        <a href="#">
+                            <h4><small>Capuccino</small></h4>
+                            <picture>
+                                <img src="../img/capuccino.png" alt="capuccino">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="sliding-img" id="carrousel-img-end">
+                        <a href="#">
+                            <h4><small>Chocotorta</small></h4>
+                            <picture>
+                                <img src="../img/chocotorta.png" alt="chocotorta">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <!-- Boton de avance carrousel -->
+                <button class="sliding-arrow sliding-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Carrousel de imagenes -->
+
+    <!-- Imagenes de fin de pagina  -->
+    <section class="know-us">
+        <img src="../img/inside.png" alt="interior">
+        <div>
+            <figure>
+                <img src="../img/conocenos.png" alt="conocenos">
+                <button>
+                    <a href="nosotros.html">Conócenos...</a>
+                </button>
+            </figure>
+        </div>
+        <img src="../img/terrace.png" alt="exterior">
+    </section>
+    <!-- Imagenes de fin de pagina -->
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <ul>
+                <li><a href="index.html"><img src="../img/anteiku-footer" alt="logo" class="logo-footer"></a></li>
+            </ul>
+        </div>
+        <div class="phone-designed">
+            <div class="phone">
+                <img src="../img/icon-phone.png" alt="telefono">
+                <span>1234-5678</span>
+            </div>
+            <p>Diseñado y desarrollado por Adolfo - Jose - Adrian © 2022 Anteiku Coffee.</p>
+        </div>
+        <div class="icon-contact">
+            <h3>CONECTATE CON NOSOTROS</h3>
+            <div>
+                <a href="https://www.instagram.com" ><img src="../img/icon-instagram.png" alt="icon-instagram" class="icon-size-footer icon-transition"></a>
+                <a href="https://twitter.com"><img src="../img/icon-twitter.png" alt="icon-twitter" class="icon-size-footer icon-transition"></a>
+                <a href="https://www.spotify.com"><img src="../img/icon-spotify.png" alt="icon-spotify" class="icon-size-footer icon-transition"></a>
+                <a href="https://web.whatsapp.com"><img src="../img/icon-whatsapp.png" alt="icon-whatsapp" class="icon-size-footer icon-transition"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+    <script defer src="../js/script.js"></script>
+</body>
+</html>

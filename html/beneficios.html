@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/css/nav-footer.css">
+    <link rel="stylesheet" href="/css/beneficios.css">
+    <title>Beneficios | Anteiku Coffee</title>
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <!-- Logo de retorno a pagina de inicio -->
+            <div class="nav-left">
+                <a href="index.html"><img src="../img/anteiku-nav" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <!-- Menu responsive -->
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../img/menu-bar.png" alt="" class="icon-size">
+                    </label>
+                <ul>
+                    <!-- Links a diferentes paginas web -->
+                    <li class="icon-transition"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="icon-transition"><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="icon-transition"><a href="beneficios.html" >BENEFICIOS</a></li>
+                    <li><a href="registrarse.html"><img src="../img/icon-login2.png" alt="icon-login" class="icon-size icon-transition"></a></li>
+                    <li><a href="#"><img src="../img/icon-shopping-cart.png" alt="icon-cart" class="icon-size icon-transition"></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- NAV -->
+    
+    <!-- CUERPO DE PAGINA -->
+    <main class="main">
+        <section class="benefits section-container">
+            <!-- Encabezado -->
+            <div class="content-wrapper">
+                <span class="title"><h1>¡Canjeá tus puntos obtenidos por increíbles beneficios!</h1></span>
+                <article class="qpoints">
+                    <div>
+                        <h2>Como obtener puntos:</h2>
+                        <p>Al utilizar nuesta web o cargando cupones obtenidos de sorteos y eventos en nuestras redes sociales, acumularás puntos que podrás canjear por distintos beneficios en tus próximas compras o visitas al café.</p>
+                    </div>
+                </article>
+                <article class="user-points">
+                    <div>
+                        <span>Puntos acumulados:</span> <span id="points">1001</span>
+                    </div>
+                </article>
+                <!-- Beneficios con sus respectivos botones -->
+                <article class="benefit-item">
+                    <div class="image-container">
+                        <img src="/img/facturas1.jpg" alt="Beneficio 1">
+                    </div>
+                    <div>
+                        <h2>Primer beneficio: 1500 puntos </h2>
+                        <p>¡En tu próxima compra podras elegir dos facturas a elección de regalo!</p>
+                    </div>  
+                    <div><button class="button">Conseguir beneficio</button></div>
+                </article>
+                <article class="benefit-item">
+                    <div class="image-container">
+                        <img src="/img/iced-coffee2.png" alt="Beneficio 2">
+                    </div>
+                    <div>
+                        <h2>Segundo beneficio: 3000 puntos</h2>
+                        <p>Obtené un 15% de desuento en tu próxima compra mayor a 500 pesos</p>
+                    </div>
+                    <div><button class="button">Conseguir beneficio</button></div>
+                </article>
+                <article class="benefit-item">
+                    <div class="image-container">
+                        <img src="/img/cheesecake-oreo.png" alt="Beneficio 3">
+                    </div>
+                    <div>
+                        <h2>Tercer beneficio: 5000 puntos</h2>
+                        <p>En tu próxima compra podras elegir dos porciones de tortas a elección</p>
+                    </div>
+                    <div><button class="button">Conseguir beneficio</button></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer>
+        <!-- Logo de pie pagina -->
+        <div>
+            <ul>
+                <li><a href="index.html"><img src="../img/anteiku-footer" alt="logo" class="logo-footer"></a></li>
+            </ul>
+        </div>
+        <!-- Icono de telefono -->
+        <div class="phone-designed">
+            <div class="phone">
+                <img src="../img/icon-phone.png" alt="telefono">
+                <span>1234-5678</span>
+            </div>
+            <p>Diseñado y desarrollado por Adolfo - Jose - Adrian © 2022 Anteiku Coffee.</p>
+        </div>
+        <div class="icon-contact">
+            <h3>CONECTATE CON NOSOTROS</h3>
+            <div>
+                <!-- Links a redes -->
+                <a href="https://www.instagram.com" ><img src="../img/icon-instagram.png" alt="icon-instagram" class="icon-size-footer icon-transition"></a>
+                <a href="https://twitter.com"><img src="../img/icon-twitter.png" alt="icon-twitter" class="icon-size-footer icon-transition"></a>
+                <a href="https://www.spotify.com"><img src="../img/icon-spotify.png" alt="icon-spotify" class="icon-size-footer icon-transition"></a>
+                <a href="https://web.whatsapp.com"><img src="../img/icon-whatsapp.png" alt="icon-whatsapp" class="icon-size-footer icon-transition"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+        
+    <script src="/js/beneficios.js"></script>
+    </body>
+</html>

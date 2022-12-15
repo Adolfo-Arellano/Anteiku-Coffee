@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/nav-footer.css">
+    <link rel="icon" href="/favicon/favicon.ico" type="icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Productos | Anteiku Coffee</title>
+    <meta name="description" content="Página para comprar los productos de Anteiku Coffee.">
+</head>
+
+<body>
+    <!-- NAV -->
+    <header>
+        <nav>
+            <!-- Logotipo de vuelta a pagina de inicio -->
+            <div class="nav-left">
+                <a href="index.html"><img src="../img/anteiku-nav" alt="logo" class="logo"></a>
+            </div>
+            <div class="nav-right">
+                <!-- Menu responsive -->
+                <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <img src="../img/menu-bar.png" alt="" class="icon-size">
+                    </label>
+                <ul>
+                    <!-- Links a diferentes paginas web -->
+                    <li class="icon-transition"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="icon-transition"><a href="productos.html">PRODUCTOS</a></li>
+                    <li class="icon-transition"><a href="beneficios.html" >BENEFICIOS</a></li>
+                    <li><a href="registrarse.html"><img src="../img/icon-login2.png" alt="icon-login" class="icon-size icon-transition"></a></li>
+                    <img onmouseover="showCart(this)" class="cart" src="/img/icon-shopping-cart.png" alt="">
+                </ul>
+            <!--CARRITO ICONO-->
+            </div>
+                <div class="cart-products" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">x</p>
+                    <h3>Carrito</h3>
+                    <div class="card-items"></div>
+                    <h2>Total:$ <strong class="price-total">0</strong> </h2>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- NAV -->
+    
+    <!-- Tarjetas de Productos -->
+    <section>
+        <h2 class="h2">Productos</h2>
+        <div class="flex-container">
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image"><img src="/img/prod10.jpg" alt="img1"></div>
+                    <div class="flex-content-title">Torta Oreo</div>
+                    <div class="flex-content-text">Torta de crema con base y topping de galleta Oreo.</div>
+                    <div class="flex-content-price">2299,99</div>
+                    <div class="flex-content-button"><a class="flex-content-button-link" data-id="0">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image"><img src="/img/prod11.jpg" alt="img2"></div>
+                    <div class="flex-content-title">Tiramisú Matcha</div>
+                    <div class="flex-content-text">Una torta de tiramisú, con relleno y topping de matcha, más comúnmente conocido como té verde.</div>
+                    <div class="flex-content-price">1699,99</div>
+                    <div class="flex-content-button"><a class="flex-content-button-link" data-id="1">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image"><img src="/img/prod3.jpg" alt="img3"></div>
+                    <div class="flex-content-title">Mokaccino Helado</div>
+                    <div class="flex-content-text">Este es un café preparado a muy baja temperatura, ideal para días de intenso calor.</div>
+                    <div class="flex-content-price">999,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="2">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image">
+                        <img src="/img/prod4.jpg" alt="img4">
+                    </div>
+                    <div class="flex-content-title">Cortado Helado</div>
+                    <div class="flex-content-text">Similar al café cortado tradicional, pero servido a baja temperatura.</div>
+                    <div class="flex-content-price">1399,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="3">Comprar</a></div>
+                </div>
+        </div>
+
+        <div class="flex-container">
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image">
+                        <img src="/img/prod1.jpg" alt="img5">
+                    </div>
+                    <div class="flex-content-title">Café con Leche</div>
+                    <div class="flex-content-text">Tradicional preparación de café cortado con leche, ideal para el desayuno o merienda.</div>
+                    <div class="flex-content-price">899,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="4">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image">
+                        <img src="/img/prod2.jpg" alt="img6">
+                    </div>
+                    <div class="flex-content-title">Chocotorta</div>
+                    <div class="flex-content-text">Este postre argentino es tan delicioso que a pesar de ser moderno, ya se convirtió en un clásico.</div>
+                    <div class="flex-content-price">1999,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="5">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image">
+                        <img src="/img/prod7.jpg" alt="img7">
+                    </div>
+                    <div class="flex-content-title">Mini Café Cortado</div>
+                    <div class="flex-content-text">Este es un café ideal para ser disfrutado en un desayuno exprés.</div>
+                    <div class="flex-content-price">499,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="6">Comprar</a></div>
+                </div>
+                <div class="flex-content-box"> 
+                    <div class="flex-content-image">
+                        <img src="/img/prod8.jpg" alt="img8">
+                    </div>
+                    <div class="flex-content-title">Mini Cappuccino</div>
+                    <div class="flex-content-text">Un clásico, consta de café, leche y cacao. Servido en tamaño mini.</div>
+                    <div class="flex-content-price">599,99</div>
+                    <div class="flex-content-button"><a href="#" class="flex-content-button-link" data-id="7">Comprar</a></div>
+                </div>
+        </div>
+        <h2 class="h2">Proximamente mas...</h2>
+    </section>
+    <!-- Tarjetas de Productos -->
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- Logo de pie pagina -->
+        <div>
+            <ul>
+                <li><a href="index.html"><img src="../img/anteiku-footer" alt="logo" class="logo-footer"></a></li>
+            </ul>
+        </div>
+        <!-- Icono de telefono -->
+        <div class="phone-designed">
+            <div class="phone">
+                <img src="../img/icon-phone.png" alt="telefono">
+                <span>1234-5678</span>
+            </div>
+            <p>Diseñado y desarrollado por Adolfo - Jose - Adrian © 2022 Anteiku Coffee.</p>
+        </div>
+        <div class="icon-contact">
+            <h3>CONECTATE CON NOSOTROS</h3>
+            <div>
+                <!-- Links a redes -->
+                <a href="https://www.instagram.com" ><img src="../img/icon-instagram.png" alt="icon-instagram" class="icon-size-footer icon-transition"></a>
+                <a href="https://twitter.com"><img src="../img/icon-twitter.png" alt="icon-twitter" class="icon-size-footer icon-transition"></a>
+                <a href="https://www.spotify.com"><img src="../img/icon-spotify.png" alt="icon-spotify" class="icon-size-footer icon-transition"></a>
+                <a href="https://web.whatsapp.com"><img src="../img/icon-whatsapp.png" alt="icon-whatsapp" class="icon-size-footer icon-transition"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script defer src="/js/productos.js"></script>
+</body>
+</html>
