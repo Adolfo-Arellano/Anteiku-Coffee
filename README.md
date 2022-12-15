@@ -4,4 +4,4 @@ Un proyecto desarrollado durante el curso de Codo a Codo en conjunto con 2 compa
 
 Este proyecto esta enfocado en una cafeteria con una nueva propuesta y con la idea de innovar en el tipo de cafes que se suelen servir en cafeterias y la propuesta repostera de igual manera.
 
-Este codigo tiene pequeñas modificaciones respecto al original con el fin de mejorar el codigo y usar buenas practicas.
+El codigo tiene pequeñas modificaciones respecto al original con el fin de mejorar el codigo y usar buenas practicas.
